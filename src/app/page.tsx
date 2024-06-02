@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("/next-bandf-connect/api/jokes")
+      .get("http://192.168.1.33:8000")
       .then((res) => {
         setJokes(res.data);
       })
