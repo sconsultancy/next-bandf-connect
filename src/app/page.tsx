@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get("/api/jokes")
+      .get("/next-bandf-connect/api/jokes")
       .then((res) => {
         setJokes(res.data);
       })
