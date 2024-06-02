@@ -9,7 +9,7 @@ const nextConfig = {
       },
 
       {
-        source: "next-bandf-connect/api/:path*",
+        source: "/next-bandf-connect/api/:path*",
         destination: "http://localhost:8000/api/path*",
       },
     ];
