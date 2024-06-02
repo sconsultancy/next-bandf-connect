@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   async rewrites() {
     return [
       {
@@ -10,7 +9,7 @@ const nextConfig = {
 
       {
         source: "/next-bandf-connect/api/:path*",
-        destination: "http://localhost:8000/api/path*",
+        destination: "http://localhost:8000/",
       },
     ];
   },
